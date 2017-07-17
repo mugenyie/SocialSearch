@@ -1,0 +1,21 @@
+<div class="searchSidebar">
+<ul>
+	<li><a href="#">Social Media</a></li>
+</ul>
+<div class="underlineFilter"><strong>Filters</strong></div>
+<ul>
+	<li class="button" 
+	title="Display search results from <strong>Twitter</strong>">
+	<a href="{$url}/index.php?a=search&q={$query}&f=1{$o}">Twitter</a></li>
+	<li class="button" 
+	title="Display search results from <strong>Google Plus</strong>">
+	<a href="{$url}/index.php?a=search&q={$query}&f=2{$o}">YouTube</a></li>
+</ul>
+</div>
+<div class="searchContent">
+<div class="searchHeader">Showing results for <strong>{$query}</strong> {$filtru} (Load time: {$duration})</div>
+{$ad2}
+	<div class="searchResults">{$rows}{$error}</div>
+	<div class="searchPagination">{$pagination}</div>
+</div>
+{$ad3}
